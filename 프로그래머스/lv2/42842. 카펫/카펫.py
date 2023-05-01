@@ -2,7 +2,7 @@ def solution(brown, yellow):
     
     s = []
     
-    for width in range(3, brown+yellow+1):
+    for width in range(3, brown+yellow):
         height = (brown+yellow)/width
         if height % 1 == 0 and width >= height:
             s.append([width, int(height)])
